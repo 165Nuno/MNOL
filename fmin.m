@@ -115,7 +115,7 @@ end
 (c) Usando como tolerˆancia de paragem T olF un = 10−6
 .
 
-op=optimset(’TolFun’,1e-6);
+op=optimset('TolFun',1e-6);
 [x,fval,exitflag,output]=fminsearch(@NM1,[-1 1],op)
 function [ f ] = NM1( x )
 f=abs(x(1)*x(2))+x(2)^2;
